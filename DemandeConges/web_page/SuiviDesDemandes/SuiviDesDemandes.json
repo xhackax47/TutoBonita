@@ -1,0 +1,612 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "SuiviDesDemandes",
+  "name" : "SuiviDesDemandes",
+  "lastUpdate" : 1669107039773,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Application de gestion des demandes de congés"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 2"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          }
+        },
+        "reference" : "9bd54d31-914e-4603-a239-80f18c3ab6c1",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "9f17a50e-f015-4fa4-abc2-0cd80b2de0d4",
+        "hasValidationError" : false,
+        "id" : "nouvelleDemandeFragment",
+        "binding" : {
+          "dataExt" : "nouvelleDemandeConges"
+        }
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          }
+        },
+        "reference" : "865b83c8-b6da-4605-9c4a-468b7615ba3c",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "description" : "Auto generate ui for business object \"com.company.model.DemandeConges\"",
+        "rows" : [
+          [
+            {
+              "type" : "container",
+              "dimension" : {
+                "xs" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "repeatedCollection" : {
+                  "type" : "variable",
+                  "value" : ""
+                }
+              },
+              "reference" : "38d07ebe-ac69-4da9-8f03-cfc3b22f4ad7",
+              "hasValidationError" : false,
+              "id" : "pbContainer",
+              "description" : "\"com.company.model.DemandeConges\" object from \"demandeConges\" variable",
+              "rows" : [
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "md" : 12,
+                      "sm" : 12,
+                      "xs" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "level" : {
+                        "type" : "constant",
+                        "value" : "Level 4"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "text" : {
+                        "type" : "interpolation",
+                        "value" : "Suivi des demandes"
+                      },
+                      "alignment" : {
+                        "type" : "constant",
+                        "value" : "center"
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      }
+                    },
+                    "reference" : "295ac5a3-0e3a-4e67-b55d-48c5a84920a8",
+                    "hasValidationError" : false,
+                    "id" : "pbTitle",
+                    "description" : ""
+                  }
+                ],
+                [
+                  {
+                    "type" : "component",
+                    "dimension" : {
+                      "md" : 12,
+                      "sm" : 12,
+                      "xs" : 12,
+                      "lg" : 12
+                    },
+                    "propertyValues" : {
+                      "headers" : {
+                        "type" : "constant",
+                        "value" : [
+                          "Date Debut",
+                          "Nombre Jours",
+                          "Est Approuvee"
+                        ]
+                      },
+                      "allowHtml" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "condensed" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "bordered" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "selectedRow" : {
+                        "type" : "variable",
+                        "value" : "demandeConges_selected"
+                      },
+                      "columnsKey" : {
+                        "type" : "constant",
+                        "value" : [
+                          "dateDebut",
+                          "nombreJours",
+                          "estApprouveeLabel"
+                        ]
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 12
+                      },
+                      "content" : {
+                        "type" : "expression",
+                        "value" : "demandeConges"
+                      },
+                      "zebraStriping" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : true
+                      },
+                      "striped" : {
+                        "type" : "constant",
+                        "value" : true
+                      }
+                    },
+                    "reference" : "c88e64ff-d6e3-4f53-b150-a883c0068b6f",
+                    "hasValidationError" : false,
+                    "id" : "pbTable",
+                    "description" : ""
+                  }
+                ],
+                [
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "md" : 1,
+                      "sm" : 1,
+                      "xs" : 1,
+                      "lg" : 1
+                    },
+                    "propertyValues" : {
+                      "repeatedCollection" : {
+                        "type" : "variable"
+                      },
+                      "hidden" : {
+                        "type" : "expression",
+                        "value" : "!demandeConges_selected"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 1
+                      }
+                    },
+                    "reference" : "3942975e-c4d6-4442-9693-c2a14fd2a718",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "rows" : [
+                      [ ]
+                    ]
+                  },
+                  {
+                    "type" : "container",
+                    "dimension" : {
+                      "md" : 11,
+                      "sm" : 11,
+                      "xs" : 11,
+                      "lg" : 11
+                    },
+                    "propertyValues" : {
+                      "repeatedCollection" : {
+                        "type" : "variable",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "expression",
+                        "value" : "!demandeConges_selected"
+                      },
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "dimension" : {
+                        "type" : "constant",
+                        "value" : 11
+                      }
+                    },
+                    "reference" : "87984a5f-1456-4cc2-a334-2b08cbcd5473",
+                    "hasValidationError" : false,
+                    "id" : "pbContainer",
+                    "description" : "Display \"DemandeConges\" details when a line is selected in the table above",
+                    "rows" : [
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!demandeConges_selected.dateDebut"
+                            },
+                            "dateFormat" : {
+                              "type" : "constant",
+                              "value" : "dd/MM/yyyy"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Date de début"
+                            },
+                            "type" : {
+                              "type" : "constant"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "todayLabel" : {
+                              "type" : "constant",
+                              "value" : "Today"
+                            },
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "showToday" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "placeholder" : {
+                              "type" : "constant",
+                              "value" : "jj/mm/aaaa"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "demandeConges_selected.dateDebut"
+                            }
+                          },
+                          "reference" : "8d287ffc-514c-4ffb-a337-d61e91a7dbfd",
+                          "hasValidationError" : false,
+                          "id" : "pbDatePicker",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!demandeConges_selected.nombreJours"
+                            },
+                            "labelPosition" : {
+                              "type" : "constant",
+                              "value" : "top"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "labelWidth" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "readOnly" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Nombre de jours"
+                            },
+                            "placeholder" : {
+                              "type" : "constant",
+                              "value" : "Nombre de jours de congés"
+                            },
+                            "type" : {
+                              "type" : "constant",
+                              "value" : "number"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "demandeConges_selected.nombreJours"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "minLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "maxLength" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "min" : {
+                              "type" : "constant",
+                              "value" : 1
+                            },
+                            "max" : {
+                              "type" : "constant"
+                            },
+                            "step" : {
+                              "type" : "constant",
+                              "value" : 1
+                            }
+                          },
+                          "reference" : "3db65c6c-1861-4759-ba03-06b66942bc2d",
+                          "hasValidationError" : false,
+                          "id" : "pbInput",
+                          "description" : ""
+                        }
+                      ],
+                      [
+                        {
+                          "type" : "component",
+                          "dimension" : {
+                            "md" : 12,
+                            "sm" : 12,
+                            "xs" : 12,
+                            "lg" : 12
+                          },
+                          "propertyValues" : {
+                            "labelHidden" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "hidden" : {
+                              "type" : "expression",
+                              "value" : "!demandeConges_selected.estApprouvee"
+                            },
+                            "cssClasses" : {
+                              "type" : "constant",
+                              "value" : ""
+                            },
+                            "disabled" : {
+                              "type" : "constant",
+                              "value" : true
+                            },
+                            "label" : {
+                              "type" : "interpolation",
+                              "value" : "Statut"
+                            },
+                            "dimension" : {
+                              "type" : "constant",
+                              "value" : 12
+                            },
+                            "value" : {
+                              "type" : "variable",
+                              "value" : "demandeConges_selected.estApprouvee"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : false
+                            }
+                          },
+                          "reference" : "b1414254-882d-4ad0-bc06-4160863da03c",
+                          "hasValidationError" : false,
+                          "id" : "pbCheckbox",
+                          "description" : ""
+                        }
+                      ]
+                    ]
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "c1468b10-be46-43e6-bf81-38f67b89c02c",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "762b5836-89af-430d-b098-b962969852e8",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "sessionInfo" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/session/unusedId"
+      ],
+      "exposed" : false
+    },
+    "demandeConges" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByIdDemandeur [com.company.model.DemandeConges]\",\"businessObjectName\":\"DemandeConges\",\"query\":{\"name\":\"findByIdDemandeur\",\"displayName\":\"findByIdDemandeur\"},\"id\":\"com.company.model.DemandeConges\",\"filters\":[{\"name\":\"idDemandeur\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{sessionInfo.user_id}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "demandeConges_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "ajoutLibelleStatutDemandeConges" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.hasOwnProperty('demandeConges') && $data.demandeConges) {\r",
+        "  for (let demande of $data.demandeConges) {\r",
+        "    if(demande.estApprouvee)  {\r",
+        "      demande.estApprouveeLabel = \"Approuvée\";\r",
+        "    } else if(demande.estApprouvee === false) {\r",
+        "      demande.estApprouveeLabel = \"Rejetée\";\r",
+        "    } else {\r",
+        "      demande.estApprouveeLabel = \"En cours\";\r",
+        "    }\r",
+        "  }\r",
+        "}\r",
+        "\r",
+        "return $data.demandeConges;"
+      ],
+      "exposed" : false
+    },
+    "nouvelleDemandeConges" : {
+      "type" : "expression",
+      "value" : [
+        "var demande = {\r",
+        "  demandeInput : {\r",
+        "    dateDebut : null,\r",
+        "    nombreJours : null,\r",
+        "    idDemandeur : $data.sessionInfo.user_id\r",
+        "  }\r",
+        "};\r",
+        "return demande;"
+      ],
+      "exposed" : false
+    },
+    "informationDefinitionProcessus" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process?p=0&c=100&o=version%20DESC&f=name=DemandeConges"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "f654e13b-0e3d-48bd-8168-3d74c13994f8",
+  "type" : "page",
+  "description" : "Page generated with Bonita UI designer"
+}

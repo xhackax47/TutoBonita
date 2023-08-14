@@ -1,0 +1,181 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "nouvelleDemandeFragment",
+  "name" : "nouvelleDemandeFragment",
+  "lastUpdate" : 1669106887121,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "dateFormat" : {
+            "type" : "constant",
+            "value" : "dd/MM/yyyy"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 1
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Date de début"
+          },
+          "type" : {
+            "type" : "constant"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "todayLabel" : {
+            "type" : "constant",
+            "value" : "Today"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "showToday" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "placeholder" : {
+            "type" : "constant",
+            "value" : "jj/mm/aaaa"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "dataExt"
+          }
+        },
+        "reference" : "dbb64879-b65b-492a-8702-9b5234f4c116",
+        "hasValidationError" : false,
+        "id" : "pbDatePicker",
+        "description" : ""
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 1
+          },
+          "readOnly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Nombre de jours"
+          },
+          "placeholder" : {
+            "type" : "constant",
+            "value" : "Nombre de jours de congés"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "number"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          },
+          "value" : {
+            "type" : "variable",
+            "value" : "dataExt"
+          },
+          "required" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "minLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "maxLength" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "min" : {
+            "type" : "constant",
+            "value" : 1
+          },
+          "max" : {
+            "type" : "constant"
+          },
+          "step" : {
+            "type" : "constant",
+            "value" : 1
+          }
+        },
+        "reference" : "f17c91e0-84a8-4d7d-8368-fcb6896c0cb5",
+        "hasValidationError" : false,
+        "id" : "pbInput",
+        "description" : ""
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "dataExt" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

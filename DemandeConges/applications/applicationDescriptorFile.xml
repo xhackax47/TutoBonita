@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="demande-conges" version="1.0" profile="User" homePage="suivi-demandes" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_bootstrapdefaulttheme">
+        <displayName>Application de demandes de congés</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_SuiviDesDemandes" token="suivi-demandes"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="suivi-demandes">
+                <displayName>Suivi des demandes</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

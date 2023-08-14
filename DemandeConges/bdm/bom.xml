@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.12.1">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.DemandeConges">
+            <fields>
+                <field type="LONG" length="255" name="idDemandeur" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="dateDebut" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="nombreJours" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="estApprouvee" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
